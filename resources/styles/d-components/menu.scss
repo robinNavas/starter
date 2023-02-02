@@ -1,0 +1,47 @@
+@use "../a-config/" as *;
+
+/** @define Menu; weak */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-menu;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $red;
+  opacity: 0;
+
+  pointer-events: none;
+
+  &__item {
+    &.is-active {
+      color: red;
+    }
+  }
+
+  &__toggler {
+    position: relative;
+    z-index: $z-menu + 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    margin-left: auto;
+
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: $white;
+    }
+  }
+}

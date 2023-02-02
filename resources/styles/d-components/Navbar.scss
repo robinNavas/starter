@@ -1,0 +1,22 @@
+@use "../a-config/" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-navbar;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+
+  background-color: $primary;
+
+  &__hello.aa {
+    position: relative;
+
+    display: flex;
+  }
+}

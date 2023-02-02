@@ -1,0 +1,21 @@
+$base: 20px;
+$basex2: $base * 2;
+$basex3: $base * 3;
+$basex4: $basex2 + $basex2;
+$basex6: $basex3 + $basex3;
+$basex5: $basex2 + $basex3;
+
+@for $i from 1 through 3 {
+  .col {
+    & .coucou {
+      padding-top: 10px;
+    }
+  }
+}
+
+.col {
+  position: relative;
+  right: auto;
+
+  display: block;
+}

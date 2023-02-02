@@ -1,0 +1,24 @@
+@use "../a-config/" as *;
+
+html {
+  scroll-behavior: initial;
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+#app {
+  position: relative;
+  z-index: $z-app;
+}

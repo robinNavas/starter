@@ -1,0 +1,23 @@
+.b-test {
+  width: 100%;
+  overflow: hidden;
+
+  background-color: red;
+
+  &__slides {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+
+    .e-img {
+      position: relative;
+
+      display: block;
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
